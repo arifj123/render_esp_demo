@@ -103,12 +103,12 @@ def update_view(tab):
     elif tab == 'pie-view':
         return html.Div([piechart_1, piechart_2]), make_menu_layout(tab)
 
-#entire_app = DispatcherMiddleware(server, {
-#    '/dash1': app.server
-#})
+entire_app = DispatcherMiddleware(server, {
+    '/dash1': app.server
+})
 
-#if __name__ == '__main__':
-#    # entire_app.run_server(debug = False, dev_tools_ui = False, use_reloader = True, host = "127.0.0.1", port = "8050")
-#    run_simple('127.0.0.1', 8050, entire_app, use_reloader = True, use_debugger = True)
+if __name__ == '__main__':
+    # entire_app.run_server(debug = False, dev_tools_ui = False, use_reloader = True, host = "127.0.0.1", port = "8050")
+    run_simple('127.0.0.1', 8050, entire_app, use_reloader = True, use_debugger = True)
 
-entire_app = app.server
+#entire_app = app.server
