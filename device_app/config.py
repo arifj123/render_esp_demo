@@ -3,7 +3,7 @@ import os
 current_directory = os.getcwd()
 
 # Change this directory when running on your computer!
-directory = current_directory + "\\device_app\\datasets\\"
+directory = current_directory
 
 
 # Don't change anything below!
